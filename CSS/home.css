@@ -1,0 +1,223 @@
+/* Começo do Geral */
+@charset "UTF-8";
+
+body {
+    font-family: sans-serif;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+    background-color: #111111;
+	padding: 0px;
+	margin: 0px;
+}
+
+#bg_transparent {
+    background: url('../images//background.gif') no-repeat fixed;
+    background-size: cover;
+    z-index: -9999;
+}
+
+@font-face {
+    font-family: 'Fastup';
+    src: url('../font/Fastup-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Dash';
+    src: url('../font/Dash-Horizon-Demo.otf');
+}
+
+@font-face {
+    font-family: 'Noticia';
+    src: url('../font/Noticia-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Nasalization';
+    src: url('../font/nasalization-rg.otf');
+}
+
+a{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #a80000 !important;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	text-decoration: none;
+}
+
+figure{
+	margin: 0px;
+}
+
+.linha {
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	display: inline-block;
+	position: relative;
+	margin-top: 0px;
+	text-align: center;
+}
+
+.esquerda-menu{
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    width: 120px;
+    float: left;
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: all .3s;
+    margin: 5px 0px 0px 30px;
+    padding-top: 8px;
+}
+
+.direita-menu{
+    position: relative;
+    display: block;
+    margin: 10px 40px 10px 10px;
+    float: right;
+    text-align: right;
+    width: 70%;
+}
+
+.center {
+    width: 730px; 
+    margin-left: auto;
+    margin-right: auto; 
+    padding-top: 150px;
+}
+
+.title1 {
+    color: white;
+    font-family: 'Nasalization', sans-serif;
+    font-size: 30pt;
+    margin-top: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text1 {
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+    opacity: 80%;
+
+}
+
+.download_button {
+    height: 60px;
+    width: 260px;
+    border: 1px solid #fff;
+    font-weight: 500;
+    font-size: 22px;
+    border-radius: 1000px;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+    transition: all .2s;
+    cursor: pointer;
+    margin-left: 220px;
+    margin-right: 220px;
+}
+
+.download_button:hover {
+    color: #ff0000 !important;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	text-decoration: none;
+    border: 1px solid #ff0000;
+}
+/* Fim do Geral */
+
+/* Começo do menu */
+
+.logo-header {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+}
+
+#Menu_title {
+    display: flex;
+    font-family: 'Fastup', sans-serif;
+    color: white;
+    font-size: 25pt;
+    margin: 0;
+}
+
+.menu{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-family: 'Fastup', sans-serif;
+    font-size: 15pt;
+    padding: 10px 0px;
+    top: 0;
+    right: 0;
+}
+
+.menu ul{
+    list-style: none;
+    margin: 0px;
+    position: absolute;
+    padding: 50px 5px 5px 5px;
+}
+
+.menu li{
+    display: inline-block;
+    padding: 0px 25px 25px 25px;
+}
+
+/* começo do sub-menu  */
+
+.menu ul ul {
+    display: none;
+    position: relative;
+}
+
+.menu_submenu {
+    display: none;
+    margin: 0;
+    backdrop-filter: blur(15px);
+    position: absolute;
+    top: 45px;
+    padding: 0;
+    right: 325px;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid white;
+    z-index: 1;
+}
+
+.menu_submenu li {
+    display: block;
+    font-family: sans-serif;
+    font-size: 12pt;
+    padding-top: 0;
+    margin: 0;
+    right: 0;
+    top: 0;
+}
+
+.menu li:hover > .menu_submenu {
+    display: block;
+}
+/* fim do sub-menu  */
+/* fim do menu  */
+
+/* Começo do responsivo */
+@media only screen and (min-device-width: 900px) {
+    }
+/* Fim do responsivo  */

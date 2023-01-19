@@ -1,0 +1,638 @@
+@font-face {
+    font-family: 'Fastup-regular';
+    src: url('../font/Fastup-Regular.ttf');
+}
+#bg_charts {
+    background-color: #111111;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.pagina-charts {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+}
+
+.pagina-charts .pagina-charts-desktop {
+    width: 1128px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 172px;
+}
+
+.charts-desktop-esquerda {
+    width: 273px;
+    height: auto;
+    background-color: rgba(195,186,207,.06);
+    border-radius: 12px;
+    padding: 20px 0;
+}
+
+.charts-desktop-nome-esquerdo.active {
+    background: hsla(0,0%,100%,.1);
+    max-width: 243px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.charts-desktop-nome-esquerdo {
+    display: block;
+    width: 100%;
+    height: 70px;
+    font-size: 16px;
+    padding: 0 15px;
+    font-weight: 500;
+    color: hsla(0,0%,100%,.7);
+    line-height: 70px;
+    cursor: pointer;
+    text-decoration: none;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.charts-desktop-nome-direita {
+    width: 825px;
+}
+
+.info-charts {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.info-charts-imagem {
+    width: 228px;
+    height: 228px;
+    border-radius: 12px;
+}
+
+.charts-desktop-direita {
+    margin-left: 65px;
+    flex: 1;
+    overflow: hidden;
+    padding: 22px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.charts-desktop-direita h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.info-charts-direita-texto {
+    width: 100%;
+    padding-left: 25px;
+}
+
+.info-charts-direita-titulo {
+    font-size: 44px;
+    font-weight: 800;
+    color: #fff;
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.info-charts-direita-desc {
+    font-size: 14px;
+    font-weight: 400;
+    color: hsla(0,0%,94.5%,.9);
+    margin-top: 12px!important;
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.info-charts-direita-breve {
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 400;
+    color: hsla(0,0%,94.5%,.5);
+    margin-top: 12px!important;
+}
+
+.info-charts-direita-button {
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    padding-top: 70px;
+}
+
+.charts-play-cheio {
+    min-width: 170px;
+    height: 36px;
+    background: #c00026;
+    border-radius: 20px;
+    padding: 0 24px 0 22px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+.icon-play {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: iconfont!important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-play button {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 8px;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    appearance: auto;
+    writing-mode: horizontal-tb !important;
+}
+
+.charts-favoritar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 20px;
+    background-color: rgba(195,186,207,.06);
+    cursor: pointer;
+    margin-left: 16px;
+}
+
+.icon-favorite {
+    font-family: iconfont!important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.charts-faixas {
+    width: 100%;
+    background-color: rgba(195,186,207,.06);
+    border-radius: 12px;
+    padding: 12px 0 40px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.charts-faixas-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: hsla(0,0%,100%,.6);
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.charts-faixas-esquerda {
+    display: flex;
+    width: 437px;
+    align-items: center;
+}
+
+.indice-faixas {
+    width: 20px;
+    text-align: center;
+}
+
+.rank-faixas {
+    width: 26px;
+    margin: 2px 20px 0;
+    text-align: center;
+}
+
+.info-faixas {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.charts-faixas-direita {
+    display: flex;
+    width: 310px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.duracao-faixas {
+    width: 36px;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.icon-relogio {
+    color: rgba(241, 241, 241, 0.6);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.faixa-charts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: hsla(0,0%,94.5%,.6);
+    font-size: 14px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.charts-faixa-esquerda {
+    display: flex;
+    width: 437px;
+    align-items: center;
+}
+
+.indice-faixa {
+    width: 20px;
+    text-align: center;
+}
+
+.rank-faixa {
+    width: 26px;
+    margin: 2px 20px 0;
+    text-align: center;
+}
+
+.info-faixa {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.info-faixa img {
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+
+.info-faixa-texto {
+    flex: 1;
+    height: 36px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.charts-faixa-direita {
+    display: flex;
+    width: 310px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.botao-pause {
+    display: none;
+}
+
+.botao-desfavoritar {
+    display: none;
+}
+
+.botao-favoritar {
+    color: #c00026;
+}
+
+.lista-artistas-lista-pequena {
+    font-size: 8pt
+}
+
+.titulo-album {
+    flex: 1;
+    color: hsla(0,0%,94.5%,.6);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.duracao-faixa {
+    width: 36px;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.info-faixa-titulo {
+    flex: 1;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.sessao_player_musica {
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: var(--alpha-color);
+    backdrop-filter: blur(50px);
+    transition: 1s;
+}
+
+.sessao_player_musica .player-capa-album{
+    display: none;
+}
+
+.sessao_player_musica .player-barra-min-inicio {
+    color: white;
+    position: absolute;
+    margin-top: 10px;
+    left: 15px;
+}
+
+.sessao_player_musica .player-barra-min-fim {
+    color: white;
+    position: absolute;
+    margin-top: 15px;
+    right: 15px;
+}
+
+.sessao_player_musica .player-info-musica{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.sessao_player_musica .player-nome-musica {
+    display: flex;
+    margin-bottom: 0px;
+    margin-top: 3px;
+    color: white;
+}
+
+.sessao_player_musica .player-nome-artista {
+    display: flex;
+    width: 40px;
+    margin-bottom: 10px;
+    font-size: 10pt;
+    cursor: pointer;
+}
+
+.player-tempo {
+    display: flex;
+    color: white;
+    font-size: 11pt;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.player-barra-tempo {
+    height: 6px;
+    width: 100%;
+    border: solid 1px #979797;
+    display: flex;
+}
+
+.player-barra-tempo progress {
+    height: 6px;
+    cursor: pointer;
+}
+
+.player-progress {
+    color: rgb(226, 226, 226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12pt;
+}
+
+.player-progress i {
+    padding: 0px;
+    cursor: pointer;
+    display: none;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.player-progress i.active {
+    padding: 0px;
+    cursor: pointer;
+    display: inline;
+}
+
+.sessao_player_musica .slider-volume {
+    width: 188px;
+    height: 40px;
+    position: absolute;
+    right: 70px;
+    bottom: 10px;
+    border-radius: 20px;
+    transform: rotate(90deg);
+    background-color: var(--alpha-color);
+    overflow: hidden;
+    opacity: 0;
+    display: none;
+}
+
+.sessao_player_musica .slider-volume.active {
+    opacity: 1;
+    display: block;
+}
+
+.sessao_player_musica .icone-volume {
+    position: absolute;
+    right: 30px;
+}
+
+.sessao_player_musica .player-botao-voltar {
+    display: none;
+}
+
+/* Começo da Sessão Musica Ativa  */
+
+.sessao_player_musica .hide{
+    display: none;
+    opacity: 0;
+    transition: 1s;
+}
+
+.sessao_player_musica .hide{
+    display: block;
+    opacity: 1;
+}
+
+.sessao_player_musica.active{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sessao_player_musica.active .player-info-musica{
+    display: block;
+    margin-bottom: 0px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.sessao_player_musica.active .player-nome-musica {
+    display: flex;
+    font-size: 25pt;
+    color: white;
+}
+
+.sessao_player_musica.active .player-nome-artista {
+    display: flex;
+    margin-top: 20px;
+    font-size: 15pt;
+    color: white;
+}
+
+
+.sessao_player_musica.active .player-barra-tempo {
+    height: 10px;
+    width: 80%;
+    border: solid 2px #979797;
+    margin-top: 0px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.sessao_player_musica.active .player-barra-tempo input {
+    height: 6px;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.sessao_player_musica.active .player-progress {
+    color: rgb(226, 226, 226);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 435px;
+    margin-right: 595px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 20pt;
+}
+
+.sessao_player_musica.active .player-capa-album {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    margin-top: 39px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sessao_player_musica.active .player-capa-album img {
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.sessao_player_musica.active .player-barra-min-inicio {
+    color: white;
+    position: absolute;
+    margin-top: 15px;
+    left: 130px;
+}
+
+.sessao_player_musica.active .player-barra-min-fim {
+    color: white;
+    position: absolute;
+    margin-top: 15px;
+}
+
+.sessao_player_musica.active .player-botao-voltar {
+    color: white;
+    margin-top: 25px;
+    font-size: 20pt;
+    margin-bottom: 0;
+    left: 20px;
+    position: absolute;
+    display: flex;
+    top: 0;
+}
+
+.sessao_player_musica.active .slider-volume {
+    width: 188px;
+    height: 7px;
+    margin-right: 40px;
+    margin-bottom: 60px;
+    position: absolute;
+    right: 70px;
+    border-radius: 20px;
+    transform: rotate(180deg);
+    background-color: var(--alpha-color);
+    overflow: hidden;
+    opacity: 0;
+    display: none;
+}
+
+.slider-volume.active {
+    opacity: 1;
+    display: block;
+}
+
+.sessao_player_musica.active .icone-volume {
+    position: absolute;
+    right: 70px;
+}
+
+/* Fim da Sessão do Player de Musica Ativo  */
