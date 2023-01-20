@@ -563,11 +563,13 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 435px;
-    margin-right: 595px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 20px;
     margin-bottom: 0;
     font-size: 20pt;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 .sessao_player_musica.active .player-capa-album {
@@ -590,7 +592,7 @@ button {
     color: white;
     position: absolute;
     margin-top: 15px;
-    left: 130px;
+    
 }
 
 .sessao_player_musica.active .player-barra-min-fim {
