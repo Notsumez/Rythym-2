@@ -23,7 +23,7 @@
                             <span>Nacionalidade</span>
                         </div>
                         <div class="tags-por-regiao-tipos">
-                            <a href="" class="item-regiao">Tudo</a>
+                            <a href="" class="item-regiao active">Tudo</a>
                             <a href="" class="item-regiao">Estados Unidos</a>
                             <a href="" class="item-regiao">Brasil</a>
                             <a href="" class="item-regiao">Inglaterra</a>
@@ -37,12 +37,30 @@
                         </div>
                     </div>
                     <div class="tags-por-genero">
-                        
+                        <div class="tags-por-genero-titulo">
+                            <span>Gênero</span>
+                        </div>
+                        <div class="tags-por-genero-tipos">
+                            <a href="" class="item-genero active">Tudo</a>
+                            <a href="" class="item-genero">Pop</a>
+                            <a href="" class="item-genero">Hip-Hop</a>
+                            <a href="" class="item-genero">Eletronica</a>
+                            <a href="" class="item-genero">EDM</a>
+                            <a href="" class="item-genero">Indiano</a>
+                            <a href="" class="item-genero">Rock</a>
+                            <a href="" class="item-genero">R&B</a>
+                            <a href="" class="item-genero">Pop Indinao</a>
+                            <a href="" class="item-genero">Alternativo</a>
+                            <a href="" class="item-genero">Funk</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="info--lista-artistas">
-
+            <div class="info-lista-artistas">
+                <a href="" class="info-artistas-item">
+                    <img src="./images/perfil-djavan.jpg" alt="" class="avatar-artista">
+                    <h2 class="nome-artista">Djavan</h2>
+                </a>
             </div>
         </div>
     </main>

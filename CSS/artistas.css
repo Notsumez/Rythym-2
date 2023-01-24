@@ -13,7 +13,7 @@
     flex-direction: column;
     justify-content: space-between;
     margin: auto;
-    padding-top: 120px;
+    padding-top: 80px;
     padding-bottom: 172px;
 }
 
@@ -37,7 +37,7 @@
     color: #fff;
     font-size: 16px;
     line-height: 27px;
-    margin-right: 25px;
+    margin-right: 55px;
     font-weight: 500;
     width: 70px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -49,4 +49,102 @@
     justify-content: flex-start;
     flex-direction: row;
     width: calc(100% - 95px);
+}
+
+.item-genero.active {
+    color: #fff;
+    font-weight: 600;
+}
+
+.item-regiao.active {
+    color: #fff;
+    font-weight: 600;
+}
+
+.item-regiao {
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 500;
+    margin-right: 30px;
+    color: hsla(0,0%,100%,.7);
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.tags-por-genero {
+    margin-bottom: 21px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.tags-por-genero-titulo {
+    color: #fff;
+    font-size: 16px;
+    margin-right: 30px;
+    font-weight: 500;
+    line-height: 27px;
+    width: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tags-por-genero-tipos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    line-height: 27px;
+    width: calc(100% - 95px);
+}
+
+.item-genero {
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 30px;
+    color: hsla(0,0%,100%,.7);
+    cursor: pointer;
+    line-height: 27px;
+    margin-bottom: 5px;
+}
+
+.info-lista-artistas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 70px;
+    justify-content: flex-start;
+}
+
+.info-artista-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+    width: 130px;
+    height: 180px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+
+.avatar-artista {
+    width: 230px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.nome-artista {
+    font-size: 16px;
+    letter-spacing: -.15px;
+    font-weight: 500;
+    height: 19px;
+    line-height: 19px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 130px;
+    text-align: center;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
